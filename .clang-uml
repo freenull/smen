@@ -1,0 +1,40 @@
+compilation_database_dir: .
+output_directory: puml
+diagrams:
+  smen_class:
+    type: class
+    glob:
+      - include/smen/lua/env.hpp
+      - include/smen/lua/stack.hpp
+      - include/smen/lua/type.hpp
+      - include/smen/lua/engine.hpp
+      - include/smen/lua/registry.hpp
+      - include/smen/lua/object.hpp
+      - include/smen/lua/functions.hpp
+      - include/smen/lua/err_handler.hpp
+      - include/smen/lua/native_types.hpp
+      - include/smen/lua/result.hpp
+      - include/smen/lua/arg_list.hpp
+      - include/smen/lua/script.hpp
+      - include/smen/lua/library.hpp
+      - include/smen/smen_library/*.hpp
+      - include/smen/*.hpp
+      - include/smen/ecs/*.hpp
+      - include/smen/gui/*.hpp
+      - include/smen/ser/*.hpp
+      - include/smen/variant/*.hpp
+      - src/ecs/*.cpp
+      - src/*.cpp
+      - src/gui/*.cpp
+      - src/lua/*.cpp
+      - src/smen_library/*.cpp
+      - src/ser/*.cpp
+      - src/variant/*.cpp
+    using_namespace:
+      - smen
+    include:
+      namespaces:
+        - smen
+    exclude:
+        glob:
+            - include/smen/lua/lua.hpp

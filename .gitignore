@@ -1,0 +1,6 @@
+docs/
+puml/
+/*.sup
+/subprojects/imgui-1.87/
+/subprojects/packagecache
+/compile_commands.json
